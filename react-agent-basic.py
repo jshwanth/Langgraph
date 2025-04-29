@@ -11,6 +11,6 @@ search_tool = TavilySearchResults(search_depth="basic")
 tools = [search_tool]
 
 agent = initialize_agent(tools =tools, llm=llm,agent="zero-shot-react-description", verbose=True)
-agent.invoke("Give me a funny fact about the Eiffel Tower")
+agent.invoke("When was SpaceX founded?")
 # result = llm.invoke("Give me a fact about the Eiffel Tower.")
 # print(result)
